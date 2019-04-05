@@ -8,7 +8,7 @@ const PORT = 3000;
 server.use(helmet());
 server.use(express.json());
 
-server.get("/", (req, res) => res.send("<h2>Test</h2>"));
+server.get("/", (req, res) => res.send("<h2>Test1</h2>"));
 
 db.getDishes()
   .then(dish => console.log("dishes", dish))
